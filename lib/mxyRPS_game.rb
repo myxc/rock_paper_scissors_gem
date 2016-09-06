@@ -1,7 +1,6 @@
 require "mxyRPS_game/version"
 require "mxyRPS_game/players"
 module MxyRPSGame
-  
   def play(game = game)
     game = Players.new
     loop do 
