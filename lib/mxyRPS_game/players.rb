@@ -9,16 +9,16 @@ module MxyRPSGame
   		puts "Hello, welcome to Rock Paper Scissors!\nRock beats Scissors\nScissors beats Paper\nPaper beats Rock \nPlayer 1 please pick your move!"
   		@player1 = gets.to_s.downcase.strip
   		loop do
-	  		break if ["rock", "scissors", "paper"].include?(@player1)
+    		break if ["rock", "scissors", "paper"].include?(@player1)
   		  puts "Player 1 please enter ONE of the THREE options (rock/paper/scissors)"
   		  @player1 = gets.to_s.downcase.strip
-	  	end
+    	end
   		puts "Okay, thank you for your input! Player 2 please pick your move!"
   		@player2 = gets.to_s.downcase.strip
    		loop do
   		  break if ["rock", "scissors", "paper"].include?(@player2)
-		    puts "Player 2 please enter ONE of the THREE options (rock/paper/scissors)"
-		    @player2 = gets.to_s.downcase.strip
+  	    puts "Player 2 please enter ONE of the THREE options (rock/paper/scissors)"
+  	    @player2 = gets.to_s.downcase.strip
   		end
   	end
 
